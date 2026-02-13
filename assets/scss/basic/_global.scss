@@ -36,3 +36,16 @@
         }
     }
 }
+.top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 100%;
+    background-color: #cecece;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}

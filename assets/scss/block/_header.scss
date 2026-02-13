@@ -3,6 +3,8 @@
     padding: 10px 0;
     width: 100%;
     position: relative;
+    transition: all .4s ease;
+    z-index: 50;
     &__wrapper {
         display: flex;
         align-items: center;
@@ -87,6 +89,9 @@
                 max-width: 200px;
                 width: 200px;
                 display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &:first-child {
                     width: 130px;
                 }

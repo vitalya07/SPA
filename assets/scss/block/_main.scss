@@ -28,7 +28,7 @@
     }
     &__users {
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         gap: 30px;
         &-user {
@@ -67,7 +67,6 @@
                 line-height: 120%;
                 color: $pinkColor400;
                 text-align: left;
-                margin-bottom: 20px;
                 transition: all .3s ease;
                 &:hover {
                     border: 1px solid $pinkColor300;

@@ -84,11 +84,34 @@ ul {
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 100%;
+  background-color: #cecece;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
 .header {
   background-color: #f53277;
   padding: 10px 0;
   width: 100%;
   position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 50;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -220,6 +243,15 @@ ul {
   max-width: 200px;
   width: 200px;
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header__nav > ul > li:first-child {
   width: 130px;
@@ -414,9 +446,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -460,7 +492,6 @@ ul {
   line-height: 120%;
   color: #f53277;
   text-align: left;
-  margin-bottom: 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -543,7 +574,6 @@ ul {
 
 .cities {
   padding: 120px 0;
-  margin-bottom: 120px;
 }
 .cities__grid {
   display: grid;
@@ -611,6 +641,203 @@ ul {
   line-height: 120%;
   color: #fff;
   z-index: 2;
+}
+
+.about {
+  padding: 120px 0;
+}
+.about__information-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #424550;
+  margin-bottom: 20px;
+}
+.about__information-list {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.about__information-list--item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #424550;
+  margin-bottom: 15px;
+  position: relative;
+}
+.about__information-list--item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-image: url("../icons/right_pink.svg");
+  background-repeat: no-repeat;
+}
+
+.footer {
+  padding: 120px;
+  border-top: 3px solid #f53277;
+  background-color: #424550;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+.footer__nav-title {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.footer__nav > ul > li > a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+}
+.footer__warning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+}
+.footer__warning-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+.footer__warning-item--text {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+}
+.footer__warning-item--doctor {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+}
+.footer__warning-item--icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+  position: relative;
+}
+.footer__warning-item--icon > img {
+  width: 24px;
+  height: 24px;
+}
+.footer__warning-item--icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.footer__warning-item--info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+}
+.footer__contacts-email {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer__contacts-email > span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.footer__contacts-copy {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
 }
 
 @media (max-width: 998px) {
