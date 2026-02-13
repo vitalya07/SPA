@@ -27,8 +27,16 @@ document.addEventListener('DOMContentLoaded', ()=> {
             top.style.display = 'none';          
             header.style.position = 'relative';
             header.style.top = `0`;  
-        }
-        
-        
+        }       
+    });
+    //Подтверждение возраста
+    const popup = document.querySelector('.popup');
+    const btn18 = document.querySelector('#btn-18');
+    const btn17 = document.querySelector('#btn-17');
+   document.body.style.overflow = 'hidden';
+    btn18.addEventListener('click', ()=> {
+        document.body.style.overflow = '';
+        popup.classList.remove('show');
+        popup.classList.add('hide');
     })
 })

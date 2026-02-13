@@ -9,6 +9,16 @@
 </head>
 <body>
     <div class="body__container">
+        <div class="popup show">
+            <div class="popup__dialog">
+                <div class="popup__content">
+                    <h2 class="popup__content-title">Подтведите действие</h2>
+                    <h2 class="popup__content-subtitle">Сайт 18+</h2>
+                    <button class="popup__content-btn popup__content-primary" id="btn-18">Мне есть 18</button>
+                    <a href="no18.html" class="popup__content-btn popup__content-secondery" id="btn-17">Мне нет 18</a>
+                </div>
+            </div>
+        </div>
         <header class="header" id="header">
             <div class="container">
                 <div class="header__wrapper">
@@ -87,7 +97,7 @@
             </nav>
         </header>
         <main class="content">
-            <section class="main">
+            <section class="main" id="main">
                 <div class="container">
                     <h1 class="main__title">Каталог SPA салонов и частных объявлений мастеров массажа</h1>
                     <p class="main__descr">Приветствуем Вас на «Массаж хХх» – самом популярном сайте о массаже в России. С помощью нашего ресурса можно выбрать лучшие салоны массажа или анкеты частных мастеров из нашей обширной базы объявлений.</p>
@@ -313,8 +323,9 @@
                         <p class="about__information-paragraph">Не сомневайтесь, на сайте massage-xxx.su вы обязательно найдете анкету, идеально подходящую именно под ваши параметры. На сегодняшний день мы являемся самым популярным сайтом отрасли, и мы делаем все для того, чтобы оставаться лидерами рынка.</p>
                     </div>
                 </div>
-            </section>
-            <footer class="footer">
+            </section>          
+        </main>
+        <footer class="footer">
                 <div class="container">
                     <div class="footer__wrapper">
                         <nav class="footer__nav">
@@ -377,11 +388,10 @@
                         <div class="footer__contacts-copy">© Массаж три икса, 2018—2026</div>
                     </div>
                 </div>
-            </footer>
-            <a href="#header" class="top">
-                <img src="assets/icons/up_white.svg" alt="Эротический массаж" width="32" height="32" loading="lazy">
-            </a>
-        </main>
+        </footer>
+        <a href="#main" class="top">
+            <img src="assets/icons/up_white.svg" alt="Эротический массаж" width="32" height="32" loading="lazy">
+        </a>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
