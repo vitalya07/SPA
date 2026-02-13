@@ -32,11 +32,24 @@ document.addEventListener('DOMContentLoaded', ()=> {
     //Подтверждение возраста
     const popup = document.querySelector('.popup');
     const btn18 = document.querySelector('#btn-18');
-    const btn17 = document.querySelector('#btn-17');
-   document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
     btn18.addEventListener('click', ()=> {
         document.body.style.overflow = '';
         popup.classList.remove('show');
         popup.classList.add('hide');
+    });
+    //Открыть список городов
+    const selectSitiesList = document.querySelector('.select__cities');
+    const selectSities = document.querySelector('.header__logo-select');
+    const selectCitiesClose = document.querySelector('.select__cities-close');
+    selectSities.addEventListener('click', ()=> {
+        selectSitiesList.classList.remove('select-hide');
+        selectSitiesList.classList.add('select-show');
+        document.body.style.overflow = 'hidden';
+    });
+    selectCitiesClose.addEventListener('click', ()=> {
+        selectSitiesList.classList.remove('select-show');
+        selectSitiesList.classList.add('select-hide');
+        document.body.style.overflow = '';
     })
 })

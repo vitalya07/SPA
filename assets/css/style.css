@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html, body {
   margin: 0;
@@ -178,6 +179,7 @@ ul {
   background-repeat: no-repeat;
   padding-left: 15px;
   opacity: 0.7;
+  cursor: pointer;
 }
 .header__favorites {
   display: -webkit-box;
@@ -918,6 +920,90 @@ ul {
   font-size: 80px;
   line-height: 120%;
   color: #f53277;
+}
+
+.select__cities {
+  background-color: rgba(255, 255, 255, 0.5647058824);
+  position: fixed;
+  width: 100%;
+}
+.select__cities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.select__cities-dialog {
+  margin: 100px auto;
+  border: 2px solid #f53277;
+  width: 80%;
+  height: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.5647058824);
+}
+.select__cities-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.select__cities-search {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.select__cities-form {
+  width: 100%;
+}
+.select__cities-input {
+  width: 100%;
+  padding: 15px;
+}
+.select__cities-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.select__cities-block--letter {
+  font-weight: 700;
+  font-size: 14px;
+  color: #f53277;
+}
+.select__cities-block-сity {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000;
+  padding: 0;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-show {
+  display: block;
 }
 
 @media (max-width: 998px) {

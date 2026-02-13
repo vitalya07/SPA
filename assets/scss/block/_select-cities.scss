@@ -1,0 +1,64 @@
+.select__cities {    
+    background-color: #ffffff90;
+    position: fixed;
+    width: 100%;
+    &-wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    &-dialog {
+        margin: 100px auto;
+        border: 2px solid $pinkColor400;
+        width: 80%;
+        height: auto;
+        padding: 30px;
+        background-color: #ffffff90;
+
+    }
+    &-close {
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    &-search {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    &-form {
+        width: 100%;
+    }
+    &-input {
+        width: 100%;
+        padding: 15px;
+    }
+    &-block {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+        margin-bottom: 20px;
+        &--letter {
+            font-weight: 700;
+            font-size: 14px;
+            color: $pinkColor400;
+        }
+        &-сity {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: $blackColor;
+            padding: 0;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+}
+.select-hide {
+    display: none;
+}
+.select-show {
+    display: block;
+}
