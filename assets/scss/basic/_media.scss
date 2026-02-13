@@ -1,0 +1,16 @@
+@media (max-width: 998px) {
+    .header {
+        &__favorites {
+            &-text {display: none;}
+        }
+        &__nav {
+            display: none;
+        }
+        &__hamburger {
+            display: block;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+}

@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    color: $blackColor;
+}
+a {
+    text-decoration: none;
+}
+button {
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+    &:focus {
+        outline: 1px solid #00000000;
+    }
+}
+input {
+    display: block;
+    &:focus {
+        outline: 1px solid #00000000;
+    }
+}
+label {
+    display: block;
+}
+ul {
+    list-style: none;
+}

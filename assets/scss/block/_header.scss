@@ -1,0 +1,158 @@
+.header {
+    background-color: $pinkColor400;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 35px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 4px;
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+        &-text {
+            font-weight: 700;
+            line-height: 120%;
+            font-size: 18px;
+            color: $whiteColor
+        }
+        &-select {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            color: $whiteColor;
+            background-image: url('../icons/header__city.svg');
+            background-repeat: no-repeat;
+            padding-left: 15px;
+            opacity: .7;
+        }
+    }
+    &__favorites {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 4px;       
+        &-icons {
+            width: 35px;
+            height: 35px;
+            border: 2px solid $whiteColor;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > img {
+                width: 24px;
+                height: 24px;
+                object-fit: cover;
+            }
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;    
+            line-height: 120%;        
+            color: $whiteColor;
+        }
+        &-count {
+            font-weight: 400;
+            font-size: 16px;     
+            line-height: 120%;          
+            color: $whiteColor;
+        }
+    }
+    &__nav {
+        & > ul {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+            & > li {
+                padding: 10px 20px;
+                position: relative;
+                border: 2px solid $whiteColor;
+                max-width: 200px;
+                width: 200px;
+                display: block;
+                &:first-child {
+                    width: 130px;
+                }
+                &:last-child {
+                    width: 140px;
+                    &::after {
+                        display: none;
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../icons/down_white.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                } 
+                &:hover {
+                    background-color: $whiteColor;
+                    a {
+                        color: $pinkColor400;
+                        position: relative;                                             
+                    }
+                    ul {
+                        display: block;
+                    }
+                    &::after {
+                        background-image: url('../icons/up-pink.svg');
+                    } 
+                }
+                & > a {
+                    font-weight: 700;
+                    font-size: 100%;
+                    color: $whiteColor;
+                    position: relative;                 
+                }
+                & > ul {
+                    padding: 15px 10px;
+                    position: absolute;
+                    width: 120%;
+                    top: 40px;
+                    left: -24px;
+                    background-color: $whiteColor;
+                    display: none;
+                    & > li {
+                        margin-bottom: 15px;
+                        & > a {
+                            font-weight: 700;
+                            font-size: 100%;
+                            line-height: 120%;
+                            color: $pinkColor400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.custom-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border: 2px solid $whiteColor;
+    border-radius: 100%;
+}

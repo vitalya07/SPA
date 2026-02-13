@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Салоны ">
+    <title>SPA салоны</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.svg" alt="Логотип сайта" width="48" height="48" class="custom-logo">
+                        <div class="header__logo-wrapper">
+                            <span class="header__logo-text">Массаж хХх</span>
+                            <span class="header__logo-select">Выбрать город</span>
+                        </div>                        
+                    </a>
+                    <div class="header__right">
+                        <a href="#" class="header__favorites">
+                            <div class="header__favorites-icons">
+                                <img src="assets/icons/header__favorites.svg" alt="Избранное" width="24" height="24">
+                            </div>                            
+                            <div class="header__favorites-text">Избранное</div>
+                            <span class="header__favorites-count">(0)</span>
+                        </a> 
+                        <nav class="header__nav">
+                            <ul>
+                                <li>
+                                    <a href="#">Салонам</a>
+                                    <ul>
+                                        <li><a href="#">Кабинет</a></li>
+                                        <li><a href="#">Реклама салонов</a></li>
+                                        <li><a href="#">Добавить салон</a></li>
+                                        <li><a href="#">Спецразмещение</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Массажисткам</a>
+                                    <ul>
+                                        <li><a href="#">Вход</a></li>
+                                        <li><a href="#">Регистрация</a></li>
+                                        <li><a href="#">Добавить салон</a></li>
+                                        <li><a href="#">Спецразмещение</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Вакансии</a>
+                                </li>
+                            </ul>
+                        </nav>   
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>                     
+                    </div>                          
+                </div>
+            </div>
+            <nav class="header__nav-mobile">
+                <ul>
+                    <li>
+                        <a href="#">Салонам</a>
+                        <ul>
+                            <li><a href="#">Кабинет</a></li>
+                            <li><a href="#">Реклама салонов</a></li>
+                            <li><a href="#">Добавить салон</a></li>
+                            <li><a href="#">Спецразмещение</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Массажисткам</a>
+                        <ul>
+                            <li><a href="#">Вход</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                            <li><a href="#">Добавить салон</a></li>
+                            <li><a href="#">Спецразмещение</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Вакансии</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <section class="main">
+                <div class="container">
+                    <h1 class="main__title">Каталог SPA салонов и частных объявлений мастеров массажа</h1>
+                    <p class="main__descr">Приветствуем Вас на «Массаж хХх» – самом популярном сайте о массаже в России. С помощью нашего ресурса можно выбрать лучшие салоны массажа или анкеты частных мастеров из нашей обширной базы объявлений.</p>
+                    <h2 class="main__subtitle title">Наш сайт используют</h2>
+                    <div class="main__users">
+                        <!-- 1 пользователи -->
+                        <div class="main__users-user">
+                            <div class="main__users-user--img">
+                                <img src="assets/img/guest.png" alt="Массажный салон используют гости" width="252" height="252">
+                            </div>
+                            <h3 class="main__users-user--title title">Гости</h3>
+                            <div class="main__users-user--descr">На Три икса гости выбирают, в какое заведение или к какому частному мастеру они пойдут на сеанс. А после посещения могут оставить свой отзыв.</div>
+                            <a href="#" class="main__users-user--cytis">Выбрать город</a>
+                        </div>
+                        <!-- 2 пользователи -->
+                        <div class="main__users-user">
+                            <div class="main__users-user--img">
+                                <img src="assets/img/salons.png" alt="Наш сайт используют другие салоны" width="252" height="252">
+                            </div>
+                            <h3 class="main__users-user--title">Салоны</h3>
+                            <div class="main__users-user--descr">Представители организаций могут максимально полно предоставить информацию о себе: добавить фото интерьеров, видео, анкеты мастеров, описание программ и цены на свои услуги.</div>
+                            <a href="#" class="main__users-user--cytis">Добавить салон</a>
+                        </div>
+                         <!-- 3 пользователи -->
+                        <div class="main__users-user">
+                            <div class="main__users-user--img">
+                                <img src="assets/img/masseuses.png" alt="Наш сайт используют Массажистки" width="252" height="252">
+                            </div>
+                            <h3 class="main__users-user--title">Массажистки</h3>
+                            <div class="main__users-user--descr">Девушки могут создать свою анкету с частным объявлением или выбрать салон, в котором они хотели бы работать.</div>
+                            <div class="main__users-user--buttons">
+                                <a href="#" class="main__users-user--cytis">Создать свою анкету</a>
+                                <a href="#" class="main__users-user--cytis">смотреть вакансии в салоны</a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="statistic">
+                <div class="container">
+                    <div class="statistic__title title">Статистика площадки</div>
+                    <div class="statistic__wrapper">
+                        <!-- города -->
+                        <div class="statistic__item">
+                            <div class="statistic__item-number">77</div>
+                            <div class="statistic__item-title">Городов</div>
+                        </div>
+                        <!-- Салонов -->
+                        <div class="statistic__item">
+                            <div class="statistic__item-number">927</div>
+                            <div class="statistic__item-title">Салонов</div>
+                        </div>
+                        <!-- Частных мастеров -->
+                        <div class="statistic__item">
+                            <div class="statistic__item-number">1689</div>
+                            <div class="statistic__item-title">Частных мастеров</div>
+                        </div>
+                        <!-- Девушки из салонов -->
+                        <div class="statistic__item">
+                            <div class="statistic__item-number">4672</div>
+                            <div class="statistic__item-title">Девушки из салонов</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cities">
+                <div class="container">
+                    <div class="cities__grid">
+                        <!-- 1 город -->
+                        <div class="cities__item">
+                            <div class="cities__item-img">
+                                <img src="assets/img/city/eroticheskiy-massazh-v-moscow_lg.jpg" alt="Эротьический массавж в Москве" width="262" height="196" loading="lazy">
+                            </div>
+                            <h3 class="cities__item-title">Москва</h3>
+                            <h3 class="cities__item-bottom">
+                                <span class="cities__item-bottom--info">59 Салонов</span>
+                                <span class="cities__item-bottom--info">199 Частных мастеров</span>
+                            </h3>
+                        </div>
+                         <!-- 2 город -->
+                        <div class="cities__item">
+                            <div class="cities__item-img">
+                                <img src="assets/img/city/eroticheskiy-massazh-v-spb_lg.jpg" alt="Эротьический массавж в Москве" width="262" height="196" loading="lazy">
+                            </div>
+                            <h3 class="cities__item-title">Санкт-Петербург</h3>
+                            <h3 class="cities__item-bottom">
+                                <span class="cities__item-bottom--info">37 Салонов</span>
+                                <span class="cities__item-bottom--info">161 Частный мастер</span>
+                            </h3>
+                        </div>
+                        <!-- 3город -->
+                        <div class="cities__item">
+                            <div class="cities__item-img">
+                                <img src="assets/img/city/eroticheskiy-massazh-v-novosibirske_lg.jpg" alt="Эротьический массавж в Москве" width="262" height="196" loading="lazy">
+                            </div>
+                            <h3 class="cities__item-title">Новосибирск</h3>
+                            <h3 class="cities__item-bottom">
+                                <span class="cities__item-bottom--info">37 Салонов</span>
+                                <span class="cities__item-bottom--info">72 Частный мастер</span>
+                            </h3>
+                        </div>
+                        <!-- 4город -->
+                        <div class="cities__item">
+                            <div class="cities__item-img">
+                                <img src="assets/img/city/eroticheskiy-massazh-v-ekaterinburge.jpg" alt="Эротьический массавж в Москве" width="262" height="196" loading="lazy">
+                            </div>
+                            <h3 class="cities__item-title">Екатеринбург</h3>
+                            <h3 class="cities__item-bottom">
+                                <span class="cities__item-bottom--info">13 Салонов</span>
+                                <span class="cities__item-bottom--info">45 Частных мастеров</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

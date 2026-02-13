@@ -1,0 +1,38 @@
+.container {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.body__container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: $blackColor;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.open-menu {
+    .header__nav-mobile {
+        right: 0;
+    }
+    .hamburger {
+        span {
+            &:first-child {
+                top: 50%;
+                transform:translate(-50%, -50%) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+}
